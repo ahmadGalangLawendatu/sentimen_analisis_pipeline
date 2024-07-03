@@ -17,7 +17,7 @@ def get_mongo_client(mongo_uri):
         return None
 
 def load(database, collection):
-    mongo_uri = "mongodb+srv:mongo"
+    mongo_uri = ""
     if not mongo_uri:
         print("MONGO_URI not set in environment variables")
 
@@ -30,7 +30,7 @@ def load(database, collection):
     return col
 
 def get_data(database, collection):
-    mongo_uri = "mongodb+srv:mongo"
+    mongo_uri = ""
     if not mongo_uri:
         print("MONGO_URI not set in environment variables")
 
